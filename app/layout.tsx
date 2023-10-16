@@ -1,3 +1,4 @@
+import Header from "@/components/header";
 import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
@@ -16,8 +17,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} bg-gray-50 text-gray-950`}>
+      <body className={`${inter.className} bg-zinc-100 text-gray-950`}>
         {/* background needs to change with each section */}
+        <Header />
         {children}
       </body>
     </html>
