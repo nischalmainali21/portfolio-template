@@ -1,5 +1,6 @@
 import About from "@/components/about";
 import Intro from "@/components/intro";
+import Projects from "@/components/projects";
 import Image from "next/image";
 
 export default function Home() {
@@ -7,6 +8,7 @@ export default function Home() {
     <main className="pt-28 sm:pt-36 flex flex-col items-center">
       <Intro />
       <About />
+      <Projects />
     </main>
   );
 }
