@@ -37,7 +37,7 @@ export default function About() {
             <div className="flex flex-col">
               {/* some paragraphs */}
               <span className="text-xl mb-6 sm:text-3xl sm:mb-10">
-                Hi, I'm{" "}
+                `Hi, I&apos;m `
                 <span className="font-bold text-2xl sm:text-4xl">
                   Nischal Mainali
                 </span>
