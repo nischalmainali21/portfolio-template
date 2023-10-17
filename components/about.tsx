@@ -7,7 +7,7 @@ import SectionHeading from "./section-heading";
 
 export default function About() {
   return (
-    <section className="bg-[#f5f8fc] w-full px-4 mb-20 sm:mb-28 sm:px-32">
+    <section className="bg-[#f5f8fc] w-full px-4 pb-16 sm:pb-20 sm:px-32">
       <div className="flex flex-col">
         <SectionHeading>About Me</SectionHeading>
         <div className="flex flex-col sm:flex-row-reverse sm:flex-grow sm:justify-between sm:gap-5 md:gap-4">
