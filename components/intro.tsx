@@ -10,7 +10,7 @@ import { FaGithubSquare } from "react-icons/fa";
 
 function Intro() {
   return (
-    <section className="mb-28 max-w-[50rem] text-center sm:mb-0">
+    <section className="mb-20 max-w-[50rem] text-center sm:mb-16 px-4">
       <div className="flex items-center justify-center">
         <motion.div
           initial={{ opacity: 0, scale: 0 }}
@@ -69,7 +69,7 @@ function Intro() {
           <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
         </a>
 
-        {/* Change the linkedin and github link */}
+        {/* Change the linkedin and github link also change the flex in mobile */}
         <a
           className="flex items-center bg-zinc-50 p-4 gap-2 rounded-full 
         outline-none focus:scale-125 hover:scale-125 hover:text-gray-950 active:scale-105 transition cursor-pointer border border-black/10"
