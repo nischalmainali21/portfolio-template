@@ -1,9 +1,11 @@
 "use client";
 
 import Image from "next/image";
-import React, { useRef } from "react";
+import React, { useEffect } from "react";
 import { motion, Variants } from "framer-motion";
 import SectionHeading from "./section-heading";
+import { useInView } from "react-intersection-observer";
+import { useActiveSectionContext } from "@/context/active-section-context";
 
 const ImageVariants: Variants = {
   offScreen: {
@@ -36,9 +38,20 @@ const DescVariants: Variants = {
 
 export default function About() {
   // const scrollRef = useRef<HTMLElement>(null); did not work for now
+  const { ref, inView } = useInView({
+    threshold: 0.5,
+  });
+  const { setActiveSection } = useActiveSectionContext();
+
+  useEffect(() => {
+    if (inView) {
+      setActiveSection("About");
+    }
+  }, [inView, setActiveSection]);
   return (
     <section
       // ref={scrollRef}
+      ref={ref}
       className="bg-[#f5f8fc] w-full px-4 pb-16 sm:pb-20 sm:px-32 scroll-mt-16"
       id="about"
     >
