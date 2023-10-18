@@ -10,7 +10,10 @@ import { FaGithubSquare } from "react-icons/fa";
 
 function Intro() {
   return (
-    <section className="mb-20 max-w-[50rem] text-center sm:mb-28 px-4">
+    <section
+      className="mb-20 max-w-[50rem] text-center sm:mb-28 px-4 scroll-mt-36"
+      id="home"
+    >
       <div className="flex items-center justify-center">
         <motion.div
           initial={{ opacity: 0, scale: 0 }}

@@ -39,7 +39,8 @@ export default function About() {
   return (
     <section
       // ref={scrollRef}
-      className="bg-[#f5f8fc] w-full px-4 pb-16 sm:pb-20 sm:px-32"
+      className="bg-[#f5f8fc] w-full px-4 pb-16 sm:pb-20 sm:px-32 scroll-mt-16"
+      id="about"
     >
       <div className="flex flex-col">
         <SectionHeading>About Me</SectionHeading>

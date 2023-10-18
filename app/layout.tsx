@@ -16,8 +16,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className={`${inter.className} bg-gray-100 text-gray-950`}>
+    <html lang="en" className="!scroll-smooth">
+      <body
+        className={`${inter.className} bg-gray-100 text-gray-950 !scroll-smooth`}
+      >
         {/* background needs to change with each section */}
         <Header />
         {children}

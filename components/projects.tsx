@@ -5,7 +5,10 @@ import Project from "@/components/project";
 
 export default function Projects() {
   return (
-    <section className="w-full px-4 mb-20 sm:mb-28 sm:px-32">
+    <section
+      className="w-full px-4 mb-20 sm:mb-28 sm:px-32 scroll-mt-16"
+      id="projects"
+    >
       <div>
         <SectionHeading>My Projects</SectionHeading>
         <div className="flex items-center justify-center flex-col">
