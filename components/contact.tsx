@@ -51,7 +51,7 @@ export default function Contact() {
             </div>
           </div>
         </div>
-        <motion.div
+        {/* <motion.div
           className="flex items-center justify-center"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
@@ -87,7 +87,7 @@ export default function Contact() {
               <FaPaperPlane className="text-xs opacity-70 transition-all group-hover:translate-x-1 group-hover:-translate-y-1" />{" "}
             </button>
           </form>
-        </motion.div>
+        </motion.div> */}
       </div>
     </section>
   );
