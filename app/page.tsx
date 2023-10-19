@@ -1,9 +1,9 @@
 import About from "@/components/about";
+import Contact from "@/components/contact";
 import Experience from "@/components/experience";
 import Intro from "@/components/intro";
 import Projects from "@/components/projects";
 import Skills from "@/components/skills";
-import Image from "next/image";
 
 export default function Home() {
   return (
@@ -13,6 +13,7 @@ export default function Home() {
       <Projects />
       <Skills />
       <Experience />
+      <Contact />
     </main>
   );
 }
