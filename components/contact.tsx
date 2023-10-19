@@ -4,6 +4,9 @@ import React from "react";
 import SectionHeading from "./section-heading";
 import { BsFillTelephoneFill } from "react-icons/bs";
 import { MdEmail } from "react-icons/md";
+import { FaPaperPlane } from "react-icons/fa";
+import { motion } from "framer-motion";
+import { sendEmail } from "@/actions/sendEmail";
 
 export default function Contact() {
   const { ref } = useSectionInView({ sectionName: "Contact", threshold: 0.3 });
@@ -37,12 +40,54 @@ export default function Contact() {
                   Email
                 </h3>
                 <p className="font-normal text-gray-800">
-                  nischalmainali21@gmail.com
+                  <a
+                    className="underline"
+                    href="mailto:nischalmainali21@gmail.com"
+                  >
+                    nischalmainali21@gmail.com
+                  </a>
                 </p>
               </div>
             </div>
           </div>
         </div>
+        <motion.div
+          className="flex items-center justify-center"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+        >
+          <form
+            className="w-[min(100%,40rem)] mt-10 flex flex-col"
+            action={async (formData) => {
+              await sendEmail(formData);
+            }}
+          >
+            <input
+              type="email"
+              name="senderEmail"
+              className="h-14 rounded-lg border border-black/10 px-4"
+              placeholder="Your Email"
+              required
+              maxLength={500}
+            ></input>
+            <textarea
+              className="h-52 my-3 rounded-lg border border-black/10 p-4"
+              placeholder="Your Message"
+              required
+              maxLength={500}
+              name="message"
+            />
+            <button
+              type="submit"
+              className="flex items-center justify-center gap-2 h-[3rem] w-[8rem] bg-gray-900 text-white rounded-full outline-none transition-all group focus:scale-110 hover:scale-110 active:scale-105 hover:bg-gray-950"
+            >
+              Submit{" "}
+              <FaPaperPlane className="text-xs opacity-70 transition-all group-hover:translate-x-1 group-hover:-translate-y-1" />{" "}
+            </button>
+          </form>
+        </motion.div>
       </div>
     </section>
   );
