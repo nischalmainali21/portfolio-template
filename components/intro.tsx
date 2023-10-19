@@ -8,9 +8,11 @@ import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
+import { useActiveSectionContext } from "@/context/active-section-context";
 
 function Intro() {
   const { ref } = useSectionInView({ sectionName: "Home", threshold: 0.5 });
+  const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
   return (
     <section
       className="mb-20 max-w-[50rem] text-center sm:mb-28 px-4 scroll-mt-36"
@@ -60,6 +62,10 @@ function Intro() {
           href="#contact"
           className=" group flex items-center bg-gray-900 text-white px-7 py-3 gap-2 rounded-full
           outline-none focus:scale-110 hover:scale-110 hover:bg-gray-900 active:scale-105 transition"
+          onClick={() => {
+            setActiveSection("Contact");
+            setTimeOfLastClick(Date.now());
+          }}
         >
           Contact Me{" "}
           <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
