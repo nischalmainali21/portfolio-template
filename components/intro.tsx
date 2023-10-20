@@ -26,7 +26,7 @@ function Intro() {
           transition={{ type: "tween", duration: 0.2 }}
         >
           <Image
-            src="/nischal_portrait.jpg"
+            src="/yoda_portrait.jpg"
             alt="Nischal's portrait"
             width="192"
             height="192"

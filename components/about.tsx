@@ -58,7 +58,7 @@ export default function About() {
               // viewport={{ root: scrollRef, amount: 1 }}//did not work
             >
               <Image
-                src="/nischal_portrait.jpg"
+                src="/yoda_portrait.jpg"
                 alt="Nischal's portrait"
                 width="192"
                 height="192"
