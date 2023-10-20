@@ -5,6 +5,7 @@ import { Inter } from "next/font/google";
 import ActiveSectionContextProvider from "@/context/active-section-context";
 import Footer from "@/components/footer";
 import ThemeSwitch from "@/components/theme-switch";
+import ThemeContextProvider from "@/context/theme-context";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -24,12 +25,14 @@ export default function RootLayout({
         className={`${inter.className} bg-gray-100 text-gray-950 dark:bg-gray-900 dark:text-gray-50 dark:text-opacity-90 !scroll-smooth`}
       >
         {/* background needs to change with each section */}
-        <ActiveSectionContextProvider>
-          <Header />
-          {children}
-          <Footer />
-        </ActiveSectionContextProvider>
-        <ThemeSwitch />
+        <ThemeContextProvider>
+          <ActiveSectionContextProvider>
+            <Header />
+            {children}
+            <Footer />
+          </ActiveSectionContextProvider>
+          <ThemeSwitch />
+        </ThemeContextProvider>
       </body>
     </html>
   );
