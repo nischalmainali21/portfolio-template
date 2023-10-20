@@ -26,10 +26,12 @@ export default function Project({
       style={{ scale: scaleProgress, opacity: opacityProgress }}
       className="mb-3 sm:mb-8 last:mb-0 group"
     >
-      <section className="bg-neutral-200 max-w-[45rem] border border-black/5 overflow-hidden sm:pr-8 relative sm:h-[20rem]  group-even:pl-8 hover:bg-neutral-300 transition rounded-lg">
+      <section className="bg-neutral-200 max-w-[45rem] border border-black/5 overflow-hidden sm:pr-8 relative sm:h-[20rem]  group-even:pl-8 hover:bg-neutral-300 transition rounded-lg dark:bg-white/10 dark:hover:bg-white/20 dark:text-white">
         <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full group-even:ml-[21rem]">
           <h3 className="text-2xl font-semibold">{title}</h3>
-          <p className="mt-2 leading-relaxed text-gray-700">{description}</p>
+          <p className="mt-2 leading-relaxed text-gray-700 dark-text">
+            {description}
+          </p>
           <ul className="flex flex-wrap mt-4 gap-2 sm:mt-auto">
             {tags.map((tag, index) => (
               <li
