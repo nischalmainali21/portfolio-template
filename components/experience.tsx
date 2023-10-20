@@ -48,7 +48,7 @@ export default function Experience() {
                 }}
                 iconStyle={{
                   background:
-                    theme === "light" ? "#f8fafc" : "(255,255,255,0.15)",
+                    theme === "light" ? "#f8fafc" : "rgba(255,255,255,0.15)",
                   fontSize: "1.5rem",
                 }}
               >
