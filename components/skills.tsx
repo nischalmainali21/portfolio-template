@@ -25,7 +25,7 @@ export default function Skills() {
 
   return (
     <section
-      className="bg-[#f5f8fc] w-full px-4 pb-16 sm:pb-20 sm:px-32 scroll-mt-16"
+      className="bg-[#f5f8fc] w-full px-4 pb-16 sm:pb-20 sm:px-32 scroll-mt-16 dark:bg-[#2C3639]"
       ref={ref}
       id="skills"
     >
@@ -36,7 +36,7 @@ export default function Skills() {
             {skillsData.map((skill, index) => (
               <motion.li
                 key={index}
-                className="bg-white border border-black/[0.1] rounded-xl py-3 px-5"
+                className="bg-white border border-black/[0.1] rounded-xl py-3 px-5 dark:bg-white/20 dark-text"
                 variants={fadeInAnimationVaraints}
                 initial="offScreen"
                 whileInView="onScreen"
