@@ -42,7 +42,7 @@ export default function About() {
     <section
       // ref={scrollRef}
       ref={ref}
-      className="bg-[#f5f8fc] w-full px-4 pb-16 sm:pb-20 sm:px-32 scroll-mt-16"
+      className="bg-[#f5f8fc] w-full px-4 pb-16 sm:pb-20 sm:px-32 scroll-mt-16 dark:bg-[#2C3639]"
       id="about"
     >
       <div className="flex flex-col">
@@ -82,7 +82,7 @@ export default function About() {
                   Nischal Mainali
                 </span>
               </span>
-              <p className="text-gray-700 sm:text-2xl">
+              <p className="text-gray-700 sm:text-2xl dark-text">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
                 consequuntur est dolorem harum dolorum soluta molestiae libero
                 cum voluptate perferendis. Tempore voluptatem assumenda fugiat

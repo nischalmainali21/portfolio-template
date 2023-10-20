@@ -5,3 +5,9 @@
 html {
   --line-color: #e5e7eb;
 }
+
+@layer components {
+  .dark-text {
+    @apply dark:text-[#DCD7C9]/75;
+  }
+}
