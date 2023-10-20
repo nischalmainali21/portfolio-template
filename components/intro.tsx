@@ -32,7 +32,7 @@ function Intro() {
             height="192"
             quality="95"
             priority={true}
-            className="h-200 w-240 rounded-full object-cover border-[.35rem] border-white shadow-xl"
+            className="h-200 w-240 rounded-full object-cover border-[.35rem] border-white shadow-xl dark:border-black/10"
           ></Image>
         </motion.div>
         {/* Need to make the protrait a wierd oval shape */}
@@ -61,7 +61,7 @@ function Intro() {
         <Link
           href="#contact"
           className=" group flex items-center bg-gray-900 text-white px-7 py-3 gap-2 rounded-full
-          outline-none focus:scale-110 hover:scale-110 hover:bg-gray-900 active:scale-105 transition"
+          outline-none focus:scale-110 hover:scale-110 hover:bg-gray-900 active:scale-105 transition dark:bg-white/20"
           onClick={() => {
             setActiveSection("Contact");
             setTimeOfLastClick(Date.now());
@@ -73,7 +73,7 @@ function Intro() {
 
         <a
           className="group flex items-center bg-gray-200 px-7 py-3 gap-2 rounded-full 
-        outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer border border-black/10"
+        outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer border border-black/10 dark:bg-white/10"
           href="/CV.pdf"
           download={true}
         >
@@ -84,7 +84,7 @@ function Intro() {
         {/* Change the linkedin and github link also change the flex in mobile */}
         <a
           className="flex items-center bg-zinc-50 p-4 gap-2 rounded-full 
-        outline-none focus:scale-125 hover:scale-125 hover:text-gray-950 active:scale-105 transition cursor-pointer border border-black/10"
+        outline-none focus:scale-125 hover:scale-125 hover:text-gray-950 active:scale-105 transition cursor-pointer border border-black/10 dark:bg-white/10 dark:text-white/60"
           href="https://youtu.be/dQw4w9WgXcQ"
           target="_blank"
         >
@@ -93,7 +93,7 @@ function Intro() {
 
         <a
           className="flex items-center bg-zinc-50 p-4 gap-2 rounded-full 
-        outline-none focus:scale-125 hover:scale-125 active:scale-105 transition cursor-pointer hover:text-gray-950 border border-black/10"
+        outline-none focus:scale-125 hover:scale-125 active:scale-105 transition cursor-pointer hover:text-gray-950 border border-black/10 dark:bg-white/10 dark:text-white/60"
           href="https://github.com/nischalmainali21"
           target="_blank"
         >
